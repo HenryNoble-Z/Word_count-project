@@ -1,0 +1,20 @@
+<!<!DOCTYPE html>
+
+<h1> Welcome to my about page</h1>
+
+<br>
+
+<p> This a page that literally talks about myself. I will be using a dictionary to pass information about myself </p>
+
+<br>
+<a href="{% url 'homepage'%}">Homepage</a>
+<br>
+
+{% for attibute, value in bio %}
+
+<br>
+{{attibute}} - {{value}}
+<br>
+
+
+{% endfor %}

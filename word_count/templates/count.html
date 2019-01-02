@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<h1>Count File</h1>
+
+<h2> There are {{count}} words in your request text box: </h2> {{fulltext}}
+<a href="{% url 'homepage'%}"> Start again</a>
+
+<h3>Word Count</h3>
+
+{% for word, counttotal in sorted_words %}
+
+{{word}} - {{counttotal}}
+
+<br>
+
+{% endfor %}
